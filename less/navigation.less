@@ -1,25 +1,36 @@
 // Navigation Styles here
 
-header {
-    //width: 50%;
-    nav {
-        // border: 2px solid red;
-        .display-flex(center, center);
-        background-color: rgba(255, 255, 255, 0.6);
-        height: 80px;
-        position: fixed; 
-        top: 0;
-        width: 100%;
-        a {
-            font-size: 3.2rem;
-            text-decoration: none;
-            .margin-padding(1%, 1%);
-            // height: 4.2rem;
-            margin-top: 2%;
-            margin-bottom: 2%;
+.navbar {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 80px;
+    position: fixed;
+    .logo {
+        width: 30%;
+        text-align: center;
+        img {
+            width: 34%;
+            margin: 1%;
         }
-        a:hover {
-            color: purple;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin-top: 15px;
+        
+        .nav-menu {
+            .display-flex(space-evenly, center);
+            width: 100%;
+            list-style-type: none;
+
+            a {
+                font-size: 1.6rem;
+                text-decoration: none;
+                color: #333333;
+            }
         }
     }
 }
+
