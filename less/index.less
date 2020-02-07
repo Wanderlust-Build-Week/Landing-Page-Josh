@@ -7,7 +7,9 @@
 @import "footer.less";
 @import "home-page.less";
 
-
+#about-link {
+    color: green;
+}
 .content {
     .display-flex(space-evenly, center);
     font-size: 2.8rem;
@@ -22,7 +24,7 @@
     }
     h3 {
         font-size: 3.6rem;
-        color: purple;
+        color: @header-style;
     }
     .login-button {
         display: flex;
@@ -56,9 +58,26 @@
             height: 214px;
         }
     }
-    .navbar .menu {
-        .display-flex(space-between, center);
-        width: 100vw;
+    .navbar {
+        .menu {
+            .display-flex(space-between, center);
+            width: 100vw;
+        }
+        .logo {
+            .nav-logo {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media @middle {
+    .navbar {
+        .logo {
+            .nav-logo {
+                width: 65%;
+            }
+        }
     }
 }
 
@@ -73,44 +92,46 @@
     .small-img, .logo {
         display: none;
     }
-    
-    // .menu {
-    //     width: 100%;
-    // }
 }
 
-// .about-page {
-//     .display-flex(center, center);
-//     // border: 2px solid red;
-// }
+.about-page {
+    .display-flex(center, center);
+    font-family: @website-font;
+}
 
-// .contact-text {
-//     .display-flex(center, center);
-//     font-size: 3.6rem;
-//     .contact-info {
-//         justify-content: space-between;
-//     }
-//     .button {
-//         .display-flex(center, center);
-//         height: 50px;
-//         width: 165px;
-//         border: 1px solid gray;
-//         border-radius: 10px;
-//         font-size: 1.8rem;
-//         background-color: lightblue;
-//         .margin-padding(20%, 1%);
-//     }
-// }
+.contributor {
+    font-size: 3.6rem;
+    color: @header-style;
+}
 
-// .contact-img {
-//     display: flex;
-//     flex-direction: column-reverse;
-//     min-width: 1700px;
-//     @media @tablet {
-//         min-width: 800px;
-//     }
-//     @media @mobile {
-//         min-width: 800px;
-//         max-width: 800px;
-//     }
-// }
+.contact-text {
+    .display-flex(center, center);
+    font-size: 3.6rem;
+    
+    .contact-info {
+        justify-content: space-between;
+    }
+    .button {
+        .display-flex(center, center);
+        height: 50px;
+        width: 165px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        font-size: 1.8rem;
+        background-color: lightblue;
+        .margin-padding(20%, 1%);
+    }
+}
+
+.contact-img {
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 1700px;
+    @media @tablet {
+        min-width: 800px;
+    }
+    @media @mobile {
+        min-width: 800px;
+        max-width: 800px;
+    }
+}
