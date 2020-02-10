@@ -7,9 +7,6 @@
 @import "footer.less";
 @import "home-page.less";
 
-#about-link {
-    color: green;
-}
 .content {
     .display-flex(space-evenly, center);
     font-size: 2.8rem;
@@ -26,7 +23,7 @@
         font-size: 3.6rem;
         color: @header-style;
     }
-    .login-button {
+    .home-button {
         display: flex;
         justify-content: center;
         .button {
@@ -44,6 +41,10 @@
     .login-button {
         margin-top: 15px;
     }
+}
+
+.home-info {
+    font-size: 2.6rem;
 }
 
 @media @tablet {
@@ -105,24 +106,24 @@
     color: @header-style;
 }
 
-.contact-text {
-    .display-flex(center, center);
-    font-size: 3.6rem;
+// .contact-text {
+//     .display-flex(center, center);
+//     font-size: 3.6rem;
     
-    .contact-info {
-        justify-content: space-between;
-    }
-    .button {
-        .display-flex(center, center);
-        height: 50px;
-        width: 165px;
-        border: 1px solid gray;
-        border-radius: 10px;
-        font-size: 1.8rem;
-        background-color: lightblue;
-        .margin-padding(20%, 1%);
-    }
-}
+//     .contact-info {
+//         justify-content: space-between;
+//     }
+//     .button {
+//         .display-flex(center, center);
+//         height: 50px;
+//         width: 165px;
+//         border: 1px solid gray;
+//         border-radius: 10px;
+//         font-size: 1.8rem;
+//         background-color: lightblue;
+//         .margin-padding(20%, 1%);
+//     }
+// }
 
 .contact-img {
     display: flex;
